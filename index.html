@@ -4,22 +4,116 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
     <title>Sign-Up Form</title>
   </head>
   <body>
     <div class="image-sidebar">
       <div class="fade-logo">
-          <img id="logo" src="./images/odin-lined.png" alt="oding-logo" /><h1 id="title">ODIN</h1>
-        </h1>
+        <img id="logo" src="./images/odin-lined.png" alt="oding-logo" />
+        <h1 id="title">ODIN</h1>
       </div>
       <cite class="credits"
         >Photo by
         <a
+          class="sidebar-links"
           href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash"
           >Halie West</a
         >
-        on <a href="https://unsplash.com"> unsplash.com</a></cite
+        on
+        <a class="sidebar-links" href="https://unsplash.com">
+          unsplash.com</a
+        ></cite
       >
+    </div>
+    <div class="form-container">
+      <div class="info">
+        <p class="info-text top-margin">
+          This is not a real online service! You know you need something <br />
+          like this in your life to help you realize your deepest dreams. <br />
+          Sign up now to get started.
+        </p>
+        <p class="info-text">You know you want to.</p>
+      </div>
+      <form action="" method="post">
+        <fieldset>
+          <h2>Let's do this!</h2>
+          <ul>
+            <li>
+              <label for="first-name">FIRST NAME</label>
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                required
+                placeholder="John"
+              />
+            </li>
+            <li>
+              <label for="email">EMAIL</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="lCQpW@example.com"
+                pattern=".+@example\.com"
+              />
+            </li>
+            <li>
+              <label for="password">PASSWORD</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                required
+                placeholder="8-12 characters"
+                minlength="8"
+                maxlength="20"
+              />
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <label for="last-name">LAST NAME</label>
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                required
+                placeholder="Doe"
+              />
+            </li>
+            <li>
+              <label for="phone-number">PHONE NUMBER</label>
+              <input
+                type="tel"
+                name="phone-number"
+                id="phone-number"
+                required
+                placeholder="555-555-5555"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              />
+            </li>
+            <li>
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                placeholder="8-12 characters"
+                minlength="8"
+                maxlength="20"
+              />
+            </li>
+          </ul>
+        </fieldset>
+        <button id="submit" type="submit">Create account</button>
+
+        <p id="login-legend">
+          Already have an account? <a id="login" href="#">Log in</a>
+        </p>
+      </form>
     </div>
   </body>
 </html>

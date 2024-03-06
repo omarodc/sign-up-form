@@ -6,11 +6,18 @@
   font-family: norse-bold;
   src: url(./fonts/Norse-Bold.otf);
 }
+
+body {
+  display: flex;
+  height: 100vh;
+  width: auto;
+}
+/* side bar styles */
 .image-sidebar {
   background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: auto;
   width: 35%;
   display: flex;
   flex-direction: column;
@@ -35,15 +42,82 @@
   font-family: Arial, Helvetica, sans-serif;
   margin-top: auto;
 }
-
 #logo {
-  width: 50px;
+  width: 100px;
   height: auto;
 }
 
 #title {
   padding: 10px;
+  font-size: 5rem;
 }
-a {
+.sidebar-links {
   color: white;
+  font-weight: bold;
+}
+
+/* form estyles: */
+
+.form-container {
+  width: 65%;
+  height: auto;
+}
+ul {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: 20px;
+}
+label,
+input {
+  display: block;
+  margin-left: 40px;
+}
+label {
+  font-weight: bold;
+  font-size: 12px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+input {
+  border: 1.5px solid #e5e7eb;
+  height: 28px;
+}
+#submit{
+  background-color: #596d48;
+  color: white;
+  padding: 5px 25px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-left: 40px;
+}
+
+h2 {
+  margin-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.info {
+  margin-left: 40px;
+}
+
+#login-legend {
+  margin-left: 40px;
+  height: auto;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.info-text {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.top-margin {
+  margin-top: 90px;
+}
+fieldset {
+  border: solid white;
+  border-bottom: 3px;
+  box-shadow: 0 8px 8px -2px gray;
 }
