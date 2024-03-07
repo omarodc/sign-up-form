@@ -17,9 +17,11 @@ body {
 
 .left {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   width: 35vw;
+  height: auto;
   background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,19 +31,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  
+  width: 100%;
+  margin-top: 25%;
 }
 .title {
   font-family: norse-bold, sans-serif;
-  font-size: 3rem;
+  font-size: 4rem;
   color: white;
   font-weight: bold;
 }
 
 .logo {
-  width: 20%;
-  height: 20%;
+  width: 100px;
+  height: auto;
 }
 .right {
   display: flex;
@@ -81,9 +83,6 @@ body {
   margin-bottom: 5%;
   margin-top: auto;
   color: white;
-
-
-
 }
 
 .form {
@@ -102,7 +101,7 @@ body {
 
 .second-title {
   margin-top: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 84px;
   margin-left: 5%;
 }
 input {
@@ -129,7 +128,6 @@ label {
   font-weight: bold;
   font-family: sans-serif;
   text-align: center;
-  
 }
 
 #login {
@@ -155,8 +153,7 @@ h3 {
   padding-top: 70px;
 }
 
-
-#error-match{
+#error-match {
   font-size: 11px;
   font-weight: bold;
   padding: 0%;
