@@ -4,22 +4,101 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
     <title>Sign-Up Form</title>
   </head>
   <body>
-    <div class="image-sidebar">
-      <div class="fade-logo">
-          <img id="logo" src="./images/odin-lined.png" alt="oding-logo" /><h1 id="title">ODIN</h1>
-        </h1>
+    <div class="left">
+      <div class="bg-fade">
+        <img class="logo" src="./images/odin-lined.png" alt="odin-lined" />
+        <h1 class="title">ODIN</h1>
       </div>
-      <cite class="credits"
-        >Photo by
-        <a
-          href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash"
-          >Halie West</a
-        >
-        on <a href="https://unsplash.com"> unsplash.com</a></cite
-      >
+      <cite class="credits">
+        <p>
+          Photo by
+          <a class="left-links" href="https://unsplash.com/@haliewestphoto">Halie West</a> on
+          <a class="left-links" href="https://unsplash.com/">Unsplash</a>
+        </p>
+      </cite>
+    </div>
+    <div class="right">
+      <div class="first">
+        <h3>
+          This is not a real online service! You know you need something
+          <br />like this in your life to help you realize your deepest dreams.
+          <br />
+          Sign up <em>now</em> to get started. <br /><br />
+          You <em>know</em> you want to.
+        </h3>
+      </div>
+      <div class="second">
+        <h2 class="second-title">Let's do this!</h2>
+        <form class="form" action="" method="post">
+          <div class="form-divs">
+            <label for="first-name">FIRST NAME</label>
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              required
+              placeholder="Bob"
+            />
+            <label for="email">EMAIL</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              pattern=".+@.+\..+"
+              placeholder="bob@odin"
+            />
+            <label for="password">PASSWORD</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              minlength="8"
+              maxlength="20"
+              required
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            />
+            <p id="error-match"></p>
+          </div>
+          <div class="form-divs left-margin">
+            <label for="last-name">LAST NAME</label>
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              required
+              placeholder="Smith"
+            />
+            <label for="phone">PHONE NUMBER</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="555-555-5555"
+            />
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+              minlength="8"
+              maxlength="20"
+              required
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="third">
+        <button type="submit">Create Account</button>
+        <p id="account-text">Already have an account? <a id="login" href="#">Login</a></p>
+      </div>
     </div>
   </body>
 </html>
