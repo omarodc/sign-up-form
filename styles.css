@@ -152,3 +152,8 @@ h1 {
   font-size: 50px;
   font-family: Norse-Bold;
 }
+
+h3 {
+  margin-left: 50px;
+  padding-top: 20px;
+}
